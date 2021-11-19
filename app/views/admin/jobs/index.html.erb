@@ -27,7 +27,9 @@
       <% end %>
       
     </td>
-    <td><%= job.created_at %></td>
+    <td>
+      <%= local_time(job.created_at, "%Y/%m/%d %H:%M") %>
+    </td>
   </tr>
   <% end %>
 </table>
