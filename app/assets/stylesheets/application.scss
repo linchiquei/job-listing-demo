@@ -21,3 +21,84 @@
 @import "bootstrap";
 @import "font-awesome";
 
+.jumbotron {
+  background-image:url('https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s800-c85.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 110px;
+  color: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  border-radius: 0 !important;
+  height: calc(100vh - 70px);
+  text-align: left;
+}
+
+.header{
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.295);
+  display: inline-block;
+  margin-top: 200px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+.slogan {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  top: 12px;
+  font-weight: 500 !important;
+}
+
+.lead {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.caption {
+  margin: 30px;
+  text-align: center;
+  top: 20px;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 60px;
+}
+
+.text-gray{
+  color: grey;
+}
+
+.custab{
+  border: 1px solid #ccc;
+
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #ccc;
+
+  transition: 0.5s;
+}
+
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
+
+.navbar-default .navbar-brand {
+  color: #0068ef;
+  padding: 10px 15px; //上下10px，左右15px
+  line-height: 30px; //文字行高
+}
+
+.btn-primary {
+  background-color: #0068ef;
+  border-color: #0068ef;
+}
+
+

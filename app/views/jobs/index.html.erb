@@ -2,6 +2,8 @@
     <%#= link_to "Add a job", new_job_path, class: "btn btn-default"  %>
 </div> -->
 
+<div class="container-fluid">
+
 <div class="dropdown clearfix pull-right">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       排序
@@ -20,31 +22,33 @@
     </ul>
 </div>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>職缺</th>
-            <th>薪資上限</th>
-            <th>薪資下限</th>
-            <th>刊登時間</th>
-        </tr>
-    </thead>
-    <tbody>
-        <% @jobs.each do |job| %>
-        <tr>
-            <td>
-                <%= link_to(job.title, job_path(job)) %>
-            </td>
-            <td>
-                <%= job.wage_lower_bound %>
-            </td>
-            <td>
-                <%= job.wage_upper_bound %>
-            </td>
-            <td>
-                <%= local_time(job.created_at, "%Y/%m/%d %H:%M") %>
-            </td>
-        </tr>
-        <% end %>
-    </tbody>
-</table>
+
+  <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th>職缺</th>
+              <th>薪資上限</th>
+              <th>薪資下限</th>
+              <th>刊登時間</th>
+          </tr>
+      </thead>
+      <tbody>
+          <% @jobs.each do |job| %>
+          <tr>
+              <td>
+                  <%= link_to(job.title, job_path(job)) %>
+              </td>
+              <td>
+                  <%= job.wage_lower_bound %>
+              </td>
+              <td>
+                  <%= job.wage_upper_bound %>
+              </td>
+              <td>
+                  <%= local_time(job.created_at, "%Y/%m/%d %H:%M") %>
+              </td>
+          </tr>
+          <% end %>
+      </tbody>
+  </table>
+</div>
